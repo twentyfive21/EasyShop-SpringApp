@@ -24,7 +24,6 @@ public class ProductsController
         this.productDao = productDao;
     }
 
-    //TODO FIND ERROR
     @GetMapping("")
     @PreAuthorize("permitAll()")
     public List<Product> search(@RequestParam(name="cat", required = false) Integer categoryId,
