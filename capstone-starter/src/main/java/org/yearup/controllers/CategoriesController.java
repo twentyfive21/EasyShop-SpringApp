@@ -1,9 +1,12 @@
 package org.yearup.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.method.P;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import org.yearup.data.CategoryDao;
 import org.yearup.data.ProductDao;
 import org.yearup.models.Category;
@@ -24,14 +27,6 @@ public class CategoriesController
     private ProductDao productDao;
 
     // ✅ create an Autowired controller to inject the categoryDao and ProductDao
-//    @Autowired
-//    public CategoriesController(CategoryDao categoryDao) {
-//        this.categoryDao = categoryDao;
-//    }
-//    @Autowired
-//    public ProductsController(ProductDao productDao) {
-//        this.productDao = productDao;
-//    }
     @Autowired
     public CategoriesController(CategoryDao categoryDao, ProductDao productDao) {
         this.categoryDao = categoryDao;
@@ -48,10 +43,16 @@ public class CategoriesController
 
     // ✅ add the appropriate annotation for a get action
     @GetMapping("{id}")
-    public Category getById(@PathVariable int id)
+    @PreAuthorize("permitAll()")
+    public ResponseEntity<Category> getById(@PathVariable int id)
     {
-        // get the category by id
-       return categoryDao.getById(id);
+        Category category = categoryDao.getById(id);
+        if (category != null && category.getName() != null) {
+            return ResponseEntity.ok(category);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+
     }
 
     // the url to return all products in category 1 would look like this
@@ -65,11 +66,10 @@ public class CategoriesController
 
     // ✅add annotation to call this method for a POST action
     // ✅add annotation to ensure that only an ADMIN can call this function
-    @PostMapping()
+    @PostMapping
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public Category addCategory(@RequestBody Category category)
-    {
-        // insert the category
+    @ResponseStatus(HttpStatus.CREATED)
+    public Category addCategory(@RequestBody Category category) {
         return categoryDao.create(category);
     }
 
@@ -88,9 +88,14 @@ public class CategoriesController
     // ✅add annotation to ensure that only an ADMIN can call this function
     @DeleteMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCategory(@PathVariable int id)
     {
         // delete the category by id
-        categoryDao.delete(id);
+       try{
+           categoryDao.delete(id);
+       }catch (Exception e){
+           e.printStackTrace();
+       }
     }
 }
