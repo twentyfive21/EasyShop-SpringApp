@@ -1,6 +1,7 @@
 package org.yearup.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.method.P;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.yearup.data.CategoryDao;
@@ -23,18 +24,22 @@ public class CategoriesController
     private ProductDao productDao;
 
     // ✅ create an Autowired controller to inject the categoryDao and ProductDao
+//    @Autowired
+//    public CategoriesController(CategoryDao categoryDao) {
+//        this.categoryDao = categoryDao;
+//    }
+//    @Autowired
+//    public ProductsController(ProductDao productDao) {
+//        this.productDao = productDao;
+//    }
     @Autowired
-    public CategoriesController(CategoryDao categoryDao) {
+    public CategoriesController(CategoryDao categoryDao, ProductDao productDao) {
         this.categoryDao = categoryDao;
-    }
-    @Autowired
-    public CategoriesController(ProductDao productDao) {
         this.productDao = productDao;
     }
 
-
     //✅ add the appropriate annotation for a get action
-    @GetMapping
+    @GetMapping()
     public List<Category> getAll()
     {
         // find and return all categories
@@ -60,7 +65,7 @@ public class CategoriesController
 
     // ✅add annotation to call this method for a POST action
     // ✅add annotation to ensure that only an ADMIN can call this function
-    @PostMapping
+    @PostMapping()
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public Category addCategory(@RequestBody Category category)
     {
