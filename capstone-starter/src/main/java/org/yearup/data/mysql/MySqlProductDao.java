@@ -17,7 +17,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
     {
         super(dataSource);
     }
-    //TODO FIND ERROR
+    //TODO ERROR was max value in set param 3
     @Override
     public List<Product> search(Integer categoryId, BigDecimal minPrice, BigDecimal maxPrice, String color)
     {
@@ -38,7 +38,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, categoryId);
             statement.setInt(2, categoryId);
-            statement.setBigDecimal(3, minPrice);
+            statement.setBigDecimal(3, maxPrice);
             statement.setBigDecimal(4, minPrice);
             statement.setString(5, color);
             statement.setString(6, color);
