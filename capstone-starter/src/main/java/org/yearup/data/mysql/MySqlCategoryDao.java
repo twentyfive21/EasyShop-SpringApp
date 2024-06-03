@@ -145,10 +145,11 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
                     PreparedStatement preparedStatement = connection.prepareStatement(sql);
                     ){
                 preparedStatement.setInt(1,categoryId);
-                int rowsAffected = preparedStatement.executeUpdate();
-                if (rowsAffected == 0) {
-                    throw new SQLException("No category found to delete");
-                }
+                preparedStatement.executeUpdate();
+//                int rowsAffected = preparedStatement.executeUpdate();
+//                if (rowsAffected == 0) {
+//                    throw new SQLException("No category found to delete");
+//                }
             }
         }catch (SQLException e){
             e.printStackTrace();
