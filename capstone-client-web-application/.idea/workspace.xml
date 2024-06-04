@@ -7,26 +7,30 @@
     <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/camera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/camera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/earbuds.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/earbuds.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/gaming-console.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/gaming-console.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/headphones.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/headphones.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/laptop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/laptop.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-dress-shirt.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shoes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-dress-shoes.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-jacket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-jacket.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-jeans.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-jeans.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-polo-shirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-polo-shirt.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-shorts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-shorts.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-sneakers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-sneakers.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/mens-tshirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-tshirt.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/smart-tv.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smart-tv.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/smartphone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smartphone.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/smartwatch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smartwatch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/tablet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/tablet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/vr-headset.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/vr-headset.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/womens-socks.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/blender.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/blender.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/casserole-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/casserole-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/cookware-set.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/cookware-set.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/cutting-board-set.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/cutting-board-set.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/electric-kettle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/electric-kettle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/food-storage-containers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/food-storage-containers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/ice-cream-maker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/ice-cream-maker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/kitchen-scale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/kitchen-scale.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/kitchen-timer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/kitchen-timer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-belt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-belt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-hat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-hat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-socks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-socks.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-tie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-tie.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-watch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-watch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/microwave-oven.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/microwave-oven.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/printer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/printer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/slow-cooker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/slow-cooker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/tea-kettle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/tea-kettle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-dress.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/womens-dress.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-gown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-hat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/womens-hat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-scarf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/womens-scarf.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-shoes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/womens-shoes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-winter-coat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/womens-winter-coat.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
