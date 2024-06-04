@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/EasyshopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/EasyshopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/camera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/camera.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/earbuds.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/earbuds.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/gaming-console.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/gaming-console.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/headphones.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/headphones.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/laptop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/laptop.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-dress-shirt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shoes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-dress-shoes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-jacket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-jacket.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-jeans.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-jeans.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-polo-shirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-polo-shirt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-shorts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-shorts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-sneakers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-sneakers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-tshirt.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/mens-tshirt.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smart-tv.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smart-tv.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smartphone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smartphone.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smartwatch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/smartwatch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/tablet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/tablet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/vr-headset.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/products/vr-headset.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-socks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,22 +36,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2hNkGhxQkRTgAsjLWWZsIjE7ppi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/tina/pluralsight/java-development/EasyShop-SpringApp/capstone-client-web-application"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tina/pluralsight/java-development/EasyShop-SpringApp/capstone-client-web-application&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images/products" />
