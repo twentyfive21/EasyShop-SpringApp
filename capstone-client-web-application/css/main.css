@@ -132,9 +132,12 @@ main > .content-form .cart-item
 }
 .product  .photo > img
 {
-    width: 33%;
+    object-fit: cover;
+    width: 80%;
+    height : 25vh;
     cursor: pointer;
-    border: solid 1px #ccc;
+    object-position: 50% 0%;
+    /* border: solid 1px #ccc; */
 }
 
 .product .price
@@ -146,6 +149,8 @@ main > .content-form .cart-item
 .modal-body img
 {
     width:100%;
+
+    object-fit: cover;
 }
 
 .product > .add-button
