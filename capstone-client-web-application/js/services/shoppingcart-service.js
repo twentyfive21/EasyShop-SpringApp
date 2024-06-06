@@ -61,7 +61,7 @@ class ShoppingCartService {
                     error: "Load cart failed."
                 };
 
-                templateBuilder.append("error", data, "errors")
+//                templateBuilder.append("error", data, "errors")
             })
 
     }
@@ -166,10 +166,10 @@ class ShoppingCartService {
              .catch(error => {
 
                  const data = {
-                     error: "Empty cart failed."
+//                     error: "Empty cart failed."
                  };
 
-                 templateBuilder.append("error", data, "errors")
+//                 templateBuilder.append("error", data, "errors")
              })
     }
 
