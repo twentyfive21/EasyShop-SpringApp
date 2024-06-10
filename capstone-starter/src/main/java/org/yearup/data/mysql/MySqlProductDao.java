@@ -17,7 +17,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
     {
         super(dataSource);
     }
-    //TODO ERROR was max value in set param 3
+
     @Override
     public List<Product> search(Integer categoryId, BigDecimal minPrice, BigDecimal maxPrice, String color)
     {
