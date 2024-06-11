@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlProfileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlProfileDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -32,12 +32,12 @@ public class MySqlShoppingDao extends MySqlDaoBase implements ShoppingCartDao {
         try{
             try(
                     Connection connection = getConnection();
-                    ){
+            ){
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setInt(1, userId);
                 try(
                         ResultSet resultSet = preparedStatement.executeQuery();
-                        ){
+                ){
                     while (resultSet.next()){
                         // create the product
                         int quantity = resultSet.getInt("quantity");
