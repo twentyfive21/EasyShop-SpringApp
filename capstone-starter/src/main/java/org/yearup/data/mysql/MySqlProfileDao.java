@@ -73,8 +73,6 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
                     }
                 }
 
-
-
             }
         }catch (SQLException e){
             e.printStackTrace();

@@ -27,7 +27,7 @@ public class MySqlShoppingDao extends MySqlDaoBase implements ShoppingCartDao {
                 "JOIN products as p ON p.product_id = cart.product_id \n" +
                 "WHERE cart.user_id = ?;";
 
-        ShoppingCart shoppingCart = null;
+        ShoppingCart shoppingCart = new ShoppingCart();
 
         try{
             try(
@@ -40,6 +40,7 @@ public class MySqlShoppingDao extends MySqlDaoBase implements ShoppingCartDao {
                         ){
                     while (resultSet.next()){
                         // create the product
+                        int quantity = resultSet.getInt("quantity");
                         int productId = resultSet.getInt("product_id");
                         String name = resultSet.getString("name");
                         BigDecimal price = resultSet.getBigDecimal("price");
@@ -53,8 +54,9 @@ public class MySqlShoppingDao extends MySqlDaoBase implements ShoppingCartDao {
                                 color,stock,isFeatured,imageUrl);
                         // create shopping cart item
                         ShoppingCartItem shoppingCartItem = new ShoppingCartItem();
-                        shoppingCartItem.setQuantity(resultSet.getInt("quantity"));
+                        shoppingCartItem.setQuantity(quantity);
                         shoppingCartItem.setProduct(product);
+                        // add to shopping cart
                         shoppingCart.add(shoppingCartItem);
                     }
                 }
