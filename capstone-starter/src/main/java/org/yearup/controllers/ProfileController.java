@@ -12,45 +12,63 @@ import org.yearup.models.User;
 
 import java.security.Principal;
 
+// This tells Spring that this class is a REST controller
 @RestController
+// This sets the base URL for all methods in this controller
 @RequestMapping("profile")
+// This allows cross-origin requests (requests from different domains)
 @CrossOrigin
+// This allows all users to access the methods in this class
 @PreAuthorize("permitAll()")
 public class ProfileController {
 
+    // These are references to the data access objects for profiles and users
     private ProfileDao profileDao;
     private UserDao userDao;
+
+    // This constructor uses dependency injection to initialize profileDao and userDao
     @Autowired
     public ProfileController(ProfileDao profileDao, UserDao userDao) {
         this.profileDao = profileDao;
         this.userDao = userDao;
     }
 
-    @GetMapping()
-   public Profile getProfileById(Principal principal){
-   try{
-       String userName = principal.getName();
-       User user = userDao.getByUserName(userName);
-       var profile = profileDao.getProfileById(user.getId());
-       if(profile == null)
-           throw  new ResponseStatusException(HttpStatus.NOT_FOUND);
+    // This method handles GET requests to "/profile"
+    @GetMapping
+    public Profile getProfileById(Principal principal) {
+        try {
+            // Get the username of the currently logged-in user
+            String userName = principal.getName();
+            // Find the user by their username
+            User user = userDao.getByUserName(userName);
+            // Get the profile of the user by their ID
+            var profile = profileDao.getProfileById(user.getId());
+            // If the profile is not found, throw a 404 Not Found error
+            if (profile == null)
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 
-       return profile;
-   }catch (Exception e){
-       throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,"Error Loading Profile");
-   }
-   }
-
-   @PutMapping()
-    public void update(@RequestBody Profile profile, Principal principal){
-      try{
-          String userName = principal.getName();
-          User user = userDao.getByUserName(userName);
-          profileDao.update(user.getId(),profile);
-      }catch (Exception e){
-          throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,"Profile not able to update");
-      }
+            // Return the profile
+            return profile;
+        } catch (Exception e) {
+            // If something goes wrong, throw a 500 Internal Server Error
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error Loading Profile");
+        }
     }
 
-
+    // This method handles PUT requests to "/profile"
+    @PutMapping
+    public void update(@RequestBody Profile profile, Principal principal) {
+        try {
+            // Get the username of the currently logged-in user
+            String userName = principal.getName();
+            // Find the user by their username
+            User user = userDao.getByUserName(userName);
+            // Update the profile of the user
+            profileDao.update(user.getId(), profile);
+        } catch (Exception e) {
+            // If something goes wrong, throw a 500 Internal Server Error
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Profile not able to update");
+        }
+    }
 }
+
