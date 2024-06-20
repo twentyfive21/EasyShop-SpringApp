@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-starter/database/create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/database/create_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/controllers/ProfileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
