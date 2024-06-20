@@ -42,18 +42,22 @@ public class CategoriesController
     }
 
     // ✅ add the appropriate annotation for a get action
-    @GetMapping("{id}")
-    @PreAuthorize("permitAll()")
-    public ResponseEntity<Category> getById(@PathVariable int id)
-    {
+    @GetMapping("{id}") // Defines this method to handle GET requests at /{id}
+    @PreAuthorize("permitAll()") // Allows all users (authenticated or not) to access this method
+    public ResponseEntity<Category> getById(@PathVariable int id) {
+        // Retrieve category from database by its ID
         Category category = categoryDao.getById(id);
+
+        // Check if category exists and has a valid name
         if (category != null && category.getName() != null) {
+            // If category found and has a valid name, return it with HTTP status 200 OK
             return ResponseEntity.ok(category);
         } else {
+            // If category not found or name is null, return HTTP status 404 NOT FOUND
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
-
     }
+
 
     // the url to return all products in category 1 would look like this
     // https://localhost:8080/categories/1/products
