@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="" />
+    <list default="true" id="0f3fa065-be84-4d64-9da7-45012bc2bb8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/ShoppingCartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/ShoppingCartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingDao.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

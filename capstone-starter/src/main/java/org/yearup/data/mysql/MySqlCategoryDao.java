@@ -83,7 +83,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     public Category create(Category category)
     {
         // create a new category
-        String sql = " INSERT INTO categories (name,description) VALUES (?,?);";
+        String sql = "INSERT INTO categories (name,description) VALUES (?,?);";
         try{
             try(
                     Connection connection = getConnection();

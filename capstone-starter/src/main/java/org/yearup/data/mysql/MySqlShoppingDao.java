@@ -67,4 +67,72 @@ public class MySqlShoppingDao extends MySqlDaoBase implements ShoppingCartDao {
         }
         return shoppingCart;
     }
+
+    @Override
+    public ShoppingCart addItemToCart(int userId, int itemId) {
+
+        ShoppingCart shoppingCart = getByUserId(userId);
+
+        int currentQuantity = 0;
+        if(shoppingCart.contains(itemId)){
+            currentQuantity = shoppingCart.get(itemId).getQuantity() + 1;
+            updateCart(userId,itemId,currentQuantity);
+        } else {
+            // id,productId,quantity
+            String sql = "INSERT INTO shopping_cart VALUES (?,?,1);";
+            try{
+                try(
+                        Connection connection = getConnection();
+                ){
+                    PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                    preparedStatement.setInt(1,userId);
+                    preparedStatement.setInt(2,itemId);
+                    preparedStatement.executeUpdate();
+                }
+            }catch (SQLException e){
+                e.printStackTrace();
+                System.out.println("Error adding item to cart !!!");
+            }
+            return getByUserId(userId);
+        }
+        return shoppingCart;
+    }
+
+    @Override
+    public void clearCart(int userId) {
+        String sql = "DELETE FROM shopping_cart WHERE user_id = ?;";
+        try{
+            try(
+                    Connection connection = getConnection();
+            ){
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setInt(1,userId);
+                preparedStatement.executeUpdate();
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+            System.out.println("Error removing item!!!");
+        }
+    }
+
+    @Override
+    public void updateCart(int userId, int itemId,int quantity) {
+        String sql = "UPDATE shopping_cart SET quantity = ? WHERE user_id = ? AND product_id = ?;";
+        try{
+            try(
+                    Connection connection = getConnection();
+            ){
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setInt(1,quantity);
+                preparedStatement.setInt(2,userId);
+                preparedStatement.setInt(3,itemId);
+                preparedStatement.executeUpdate();
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+            System.out.println("Error updating item quantity");
+        }
+    }
+
+
 }
