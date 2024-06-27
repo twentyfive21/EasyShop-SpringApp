@@ -46,7 +46,6 @@ public class ProfileController {
             // If the profile is not found, throw a 404 Not Found error
             if (profile == null)
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-
             // Return the profile
             return profile;
         } catch (Exception e) {

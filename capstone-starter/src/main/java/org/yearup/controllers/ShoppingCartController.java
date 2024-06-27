@@ -47,7 +47,6 @@ public class ShoppingCartController
             // find database user by userId
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
-
             // use the shoppingcartDao to get all items in the cart and return the cart
             return shoppingCartDao.getByUserId(userId);
         }
@@ -57,6 +56,7 @@ public class ShoppingCartController
         }
     }
 
+    // Extras
     // add a POST method to add a product to the cart - the url should be
     // https://localhost:8080/cart/products/15 (15 is the productId to be added
 

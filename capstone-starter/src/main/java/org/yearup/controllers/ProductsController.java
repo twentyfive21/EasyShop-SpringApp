@@ -16,7 +16,8 @@ import java.util.List;
 @CrossOrigin // Allows requests from other origins
 public class ProductsController {
 
-    private ProductDao productDao; // Data Access Object for products
+    // Data Access Object for products
+    private ProductDao productDao;
 
     @Autowired
     public ProductsController(ProductDao productDao) {
@@ -45,12 +46,13 @@ public class ProductsController {
     public Product getById(@PathVariable int id) {
 
         try {
-            var product = productDao.getById(id); // Retrieves product from DAO by ID
-
+            // Retrieves product from DAO by ID
+            Product product = productDao.getById(id);
+            // Throws 404 if product not found
             if (product == null)
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND); // Throws 404 if product not found
-
-            return product; // Returns found product
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+            // Returns found product
+            return product;
         } catch (Exception ex) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad."); // Handles internal server error
         }
@@ -62,7 +64,8 @@ public class ProductsController {
     public Product addProduct(@RequestBody Product product) {
 
         try {
-            return productDao.create(product); // Creates and returns the new product
+            // Creates and returns the new product
+            return productDao.create(product);
         } catch (Exception ex) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad."); // Handles internal server error
         }
@@ -74,7 +77,9 @@ public class ProductsController {
     public void updateProduct(@PathVariable int id, @RequestBody Product product) {
 
         try {
-            productDao.update(id, product); // Updates the product with the given ID
+            // Updates the product with the given ID
+            // was a bug and previously .create() changed to .update() !
+            productDao.update(id, product);
         } catch (Exception ex) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad."); // Handles internal server error
         }
@@ -86,12 +91,13 @@ public class ProductsController {
     public void deleteProduct(@PathVariable int id) {
 
         try {
-            var product = productDao.getById(id); // Retrieves product by its ID
-
+            // Retrieves product by its ID
+            Product product = productDao.getById(id);
+            // Throws 404 if product not found
             if (product == null)
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND); // Throws 404 if product not found
-
-            productDao.delete(id); // Deletes the product from the database
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+            // Deletes the product from the database
+            productDao.delete(id);
         } catch (Exception ex) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad."); // Handles internal server error
         }
